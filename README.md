@@ -1,2 +1,2 @@
 # qr-login
-Untuk PKB
+Perjanjian Kerja Bersama (PKB)
