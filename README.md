@@ -1,2 +1,2 @@
 # qr-login
-Perjanjian Kerja Bersama (PKB)
+Perjanjian Kerja Bersama (PT. BUMI PERSADA PERMAI)
