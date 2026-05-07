@@ -1,17 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Login QR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+        }
+
+        .login-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .login-container p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .qr-box {
+            margin: 20px 0;
+        }
+
+        .qr-box img {
+            width: 180px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: #4facfe;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #007bff;
+        }
+    </style>
 </head>
+
 <body>
-    <h3>Login dulu</h3>
 
-    <input type="text" id="user" placeholder="User"><br><br>
-    <input type="password" id="pass" placeholder="Password"><br><br>
+    <div class="login-container">
+        <h2>Login QR</h2>
+        <p>Scan QR untuk masuk</p>
 
-    <button onclick="login()">Login</button>
+        <div class="qr-box">
+            <!-- Ganti dengan QR kamu -->
+            <img src="https://via.placeholder.com/180" alt="QR Code">
+        </div>
 
-    <script src="script.js"></script>
+        <button class="btn">Refresh QR</button>
+    </div>
+
 </body>
 </html>
-``
